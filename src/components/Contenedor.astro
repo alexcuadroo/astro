@@ -1,0 +1,75 @@
+<html>
+<section>
+    <div class="columnas">
+        <div class="casillero">
+            <h2><a href="/web" target="_blank">MAPA DE INSTITUCIONES</a></h2>
+            <p>Dispones aquí de un selector de instituciones educativas con sus respectivos lugares</p>
+        </div>
+        <div class="casillero">
+            <h2><a href="/portfolio">PORTFOLIO</a></h2>
+            <p>Acceso al portafolio personal de Alex Cuadro</p>
+        </div>
+        <div class="casillero">
+            <h2><a href="https://sites.google.com/view/mcnooobs/" target="_blank">MINECRAFT</a></h2>
+            <p>Acceso a datos de inicio y configuración de minecraft</p>
+        </div>
+        <div class="casillero">
+            <h2><a href="https://app.alexcuadro.tech/inet" target="_blank">Repositorio CC</a></h2>
+            <p>Repositorio con materiales de Ciencias de la Computación</p>
+        </div>
+    </div>
+</section>
+</html>
+<style is:global>
+	:root {
+		--accent: 136, 58, 234;
+		--accent-light: 224, 204, 250;
+		--accent-dark: 49, 10, 101;
+		--accent-gradient: linear-gradient(
+			45deg,
+			rgb(var(--accent)),
+			rgb(var(--accent-light)) 30%,
+			white 60%
+		);
+	}
+	html {
+		font-family: system-ui, sans-serif;
+		background: #13151a;
+		background-size: 224px;
+		color: #fff;
+	}
+	header {
+  		background-color: #333;
+  		color: #fff;
+}
+.columnas {
+				color: white;
+				display: grid;
+				grid-template-columns: repeat(
+				auto-fit,
+				minmax(280px, 1fr)
+				);
+				text-align: center;
+				gap: 10px;
+				margin: 0 2px;
+				padding-top: 70px;
+			}
+			h2 {
+				background-color: #150445;
+				display:inline-block;
+				border-left: 6px solid #150445;
+				border-right: 6px solid -#150445;
+				border-radius: 9px;
+                font-size: 1em;
+			}
+			.casillero {
+				background-color: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
+				color: white;
+				border: 1px solid rgb(255, 255, 255);
+				border-radius: 10px;
+			}
+			.casillero:hover {
+				background-color: #04001a;
+				border: black;
+			}
+</style>

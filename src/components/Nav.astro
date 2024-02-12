@@ -1,0 +1,107 @@
+---
+
+
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li><a href="#">Inicio</a></li>
+				<li><a href="#">Secundaria</a></li>
+				<li><a href="#">UTU</a></li>
+				<li class="menu-desplegable">
+				  <a href="#">Adicionales</a>
+				  <ul>
+					<li><a href="#">Formulario de contacto</a></li>
+					<li><a href="#">Preguntas frecuentes</a></li>
+					<li><a href="#">Acerca de</a></li>
+				  </ul>
+				</li>
+			  </ul>
+			  <img src="../../public/logo.webp" alt="" width="40px">
+		</nav>
+	</body>
+</html>
+<style is:global>
+	:root {
+		--accent: 136, 58, 234;
+		--accent-light: 224, 204, 250;
+		--accent-dark: 49, 10, 101;
+		--accent-gradient: linear-gradient(
+			45deg,
+			rgb(var(--accent)),
+			rgb(var(--accent-light)) 30%,
+			white 60%
+		);
+	}
+	html {
+		font-family: system-ui, sans-serif;
+		background: #13151a;
+		background-size: 224px;
+		color: #fff;
+	}
+	header {
+  		background-color: #333;
+  		color: #fff;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  padding: 10px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #b0b0ff;
+}
+
+.menu-desplegable {
+  position: relative;
+}
+
+.menu-desplegable ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  background-color: #13151a;
+}
+
+.menu-desplegable:hover ul {
+  visibility: visible;
+  opacity: 1;
+}
+
+.menu-desplegable ul li {
+  padding: 5px;
+}
+
+</style>
