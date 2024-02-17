@@ -5,21 +5,19 @@
 <!doctype html>
 <html lang="es">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/webp" href="logo.webp" />
 		<meta name="generator" content={Astro.generator} />
 	</head>
 	<body>
 		<nav>
 			<ul>
 				<li><a href="/">Inicio</a></li>
-				<li><a href="#">Secundaria</a></li>
-				<li><a href="#">UTU</a></li>
+				<li><a href="/selector">Opciones</a></li>
+				
 				<li class="menu-desplegable">
-				  <a href="#">Adicionales</a>
+				  <a href="#">Más...</a>
 				  <ul>
+					<li><a href="#">Mapa UTU</a></li>
+					<li><a href="#">Mapa Secundaria</a></li>
 					<li><a href="/portafolio">Portafolio</a></li>
 					<li><a href="#">Preguntas frecuentes</a></li>
 					<li><a href="/about">Acerca de</a></li>
@@ -79,11 +77,9 @@ a {
 a:hover {
   color: #b0b0ff;
 }
-
 .menu-desplegable {
   position: relative;
 }
-
 .menu-desplegable ul {
   position: absolute;
   top: 100%;
@@ -91,16 +87,14 @@ a:hover {
   visibility: hidden;
   opacity: 0;
   transition: all 0.3s ease-in-out;
-  background-color: #13151a;
+  background-color: #0000001c;
+  width: 150px;
 }
-
 .menu-desplegable:hover ul {
   visibility: visible;
   opacity: 1;
 }
-
 .menu-desplegable ul li {
   padding: 5px;
 }
-
 </style>
